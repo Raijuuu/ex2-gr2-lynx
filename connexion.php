@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+    $codeu = $_POST["courriel"];
+    $passe = $_POST["mdp"];
+?>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,5 +14,11 @@
     <h2>
         vous etes connecté...
     </h2>
+    
+    <p>
+        Bienvenu <?= $codeu ?>!
+        Votre mot de passe : <?= $passe ?>
+    </p>
+
 </body>
 </html>
